@@ -7,12 +7,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif
+    font-family: 'Roboto Condensed', sans-serif;
+    
 }
 
 body {
     background: rgb(17, 4, 4);
     background: linear-gradient(90deg, rgba(17, 4, 4, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(17, 4, 4, 1) 100%);
+    color: white;
 }
 
 .cabecalho {
