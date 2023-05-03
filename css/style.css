@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif
+}
+
+body {
+    background: rgb(17, 4, 4);
+    background: linear-gradient(90deg, rgba(17, 4, 4, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(17, 4, 4, 1) 100%);
+}
+
+.cabecalho {
+    background-color: rgb(148, 0, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+
+    
+}
+
+hr{
+    width: 100%;
+}
+
+.cabecalho nav ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 10px;
+}
+
+.cabecalho nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+#banner {
+    background-image: url("../img/banner.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+#banner span{
+    font-family: 'Castoro Titling', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 40px;
+    padding-right: 55px;
+}
+
+.filme {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    
+    
+}
+.filme h1{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 40px;
+    
+
+}
+
+.filme img{
+    width: 20%;
+    border-LEFT: 2px solid blaCK;
+    padding-left: 10px;
+
+}
+
+.filme p{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: large;
+    font-weight:bold;
+    text-justify: auto;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.filme span{
+    font-size: large;
+    font-weight:bold;
+}
+
+footer {
+    background-color:  rgb(148, 0, 20);
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
