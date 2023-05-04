@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -13,32 +12,38 @@
 body {
     background: rgb(17, 4, 4);
     background: linear-gradient(90deg, rgba(17, 4, 4, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(17, 4, 4, 1) 100%);
+    color: white;
 }
 
 .cabecalho {
     background-color: rgb(148, 0, 20);
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 
-    
+
 }
 
-hr{
+hr {
     width: 100%;
 }
 
-.cabecalho nav ul{
+.cabecalho nav ul {
     display: flex;
     gap: 10px;
     list-style: none;
     padding: 10px;
 }
 
-.cabecalho nav li a{
-    color: black;
+.cabecalho nav li a {
+    color: white;
     text-decoration: none;
+    font-weight: bolder;
+}
+
+.cabecalho nav li a:hover {
+    color: rgb(26, 12, 12)
 }
 
 #banner {
@@ -50,7 +55,7 @@ hr{
     padding-bottom: 10px;
 }
 
-#banner span{
+#banner span {
     font-family: 'Castoro Titling', cursive;
     font-size: 25px;
     font-weight: bold;
@@ -61,96 +66,155 @@ hr{
     padding-right: 55px;
 }
 
-
-.container__produtos {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    justify-content: center;
-    padding:15px;
-}
-
-.card {
-    width: 400px;
-    height: 700px;
-    border: 1px solid black;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
-.card__background {
-    height: 200px;
-    background-size: cover;
+.filme {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    gap: 10px;
     align-items: center;
-    padding-top: 10px;
+    padding: 10px;
+
 
 }
 
-.card__background img{
-    max-width: 75%;
-    border-radius: 10px;
+.filme h1 {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 40px;
+
+
 }
 
-.card__descricao {
+.filme img {
+    width: 200px;
+    border-LEFT: 2px solid blaCK;
+    padding-left: 10px;
+
+}
+
+.filme p {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    text-justify: auto;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.filme span {
+    font-size: large;
+    font-weight: bold;
+}
+
+.container__form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    flex-grow: 1;
-    padding: 0 10px;
-}
-
-.card__descricao h2 {
-    
-    text-align: center;
-    color: black;
-}
-
-.card__descricao p {
-    text-align: justify;
-    flex-grow: 1;
-}
-
-.card__descricao span {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    display: block;
-}
-
-.card__botao{
-    display:flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+
 }
 
-.card__botao button{
-    border: 1px solid black;
-    padding: 10px 15px;
-    border-radius: 10px;
-    background-color: black;
+.campo {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 10px;
 }
-.card__botao a{
-    color:white;
-    text-decoration: none;
+
+.container__form input {
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid red;
+
+}
+
+.container__form input:focus {
+    border: 1px solid black
+}
+
+.container__form input:invalid {
+    background-color: rgb(255, 79, 79);
+}
+
+.container__preferencias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.campopref {
+    display: flex;
+}
+
+.radio {
+    display: flex;
+    gap: 20px;
+}
+
+.genero {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.check input {
+    border: 1px solid black;
+}
+
+.outro {
+    display: flex;
+    gap: 5px;
+}
+
+.outro #outros {
+    width: 300px;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+#textarea textarea {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.botoes {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botoes button {
+    padding: 5px;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 footer {
-    background-color:  rgb(148, 0, 20);
+    background-color: rgb(148, 0, 20);
     display: flex;
     gap: 10px;
     padding: 5px;
     font-weight: bold;
 }
 
-footer a{
+footer a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
